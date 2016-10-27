@@ -1,2 +1,2 @@
-#os-util app_MusicPlayer
+#os-util MusicPlayer
 ##音乐播放器

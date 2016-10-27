@@ -28,9 +28,9 @@ typedef struct user_auth_info{
 /**
  * declare function 
  */
-Auth *GetUsrAndPwd(int argc, char const *argv[]);
-Auth *EncAuthInfo(Auth const *auth_src)
-char *Encode(char const *prim);
-char *Decode(char const *code);
+extern Auth *GetUsrAndPwd(int argc, char const *argv[]);
+extern Auth *EncAuthInfo(Auth const *auth_src);
+extern char *Encode(char const *prim);
+extern char *Decode(char const *code);
 
 #endif

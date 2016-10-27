@@ -11,8 +11,8 @@ Auth *EncAuthInfo(Auth const *auth_src){
 	Auth *authEnc;
 	authEnc=(Auth *)malloc(sizeof(Auth));
 
-	encodeUsr=encode(auth_src->username);
-	encodePwd=encode(auth_src->password);
+	encodeUsr=Encode(auth_src->username);
+	encodePwd=Encode(auth_src->password);
 	
 	strcpy(authEnc->username,encodeUsr);
 	strcpy(authEnc->password,encodePwd);
@@ -31,7 +31,7 @@ Auth *EncAuthInfo(Auth const *auth_src){
 //  	Auth *authEnc=EncAuthInfo(auth);
 //  	printf("Encode Auth username:%s,passowrd:%s\n",authEnc->username,authEnc->password);
 
-//  	strcpy(authEnc->password,decode(authEnc->password));
+//  	strcpy(authEnc->password,Decode(authEnc->password));
 //  	printf("Decode Auth username:%s,passowrd:%s\n",authEnc->username,authEnc->password);
 //     return 0;
 // }

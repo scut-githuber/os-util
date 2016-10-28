@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "ReceiveFriendRequest.h"
 
 // Function Name : ReceiveFriendRequest()
 // Input : tcpsocket指针
@@ -11,6 +11,14 @@ char *ReceiveFriendRequest(TcpSocket *m_tcpsocket)
     bool ret;
     uint32_t flag_buff;
     memset(buff,0,MAXSIZE * sizeof(char));
+
+#if defined(NO_IMPLEMENTATION)
+
+    printf("Received the friend request !");
+    return NULL;
+
+#else
+
     ret = m_tcpsocket->Receive(&uint32_t,sizeof(uint32_t)); // 接收请求参数
 
     if(!ret) return NULL;
@@ -20,4 +28,7 @@ char *ReceiveFriendRequest(TcpSocket *m_tcpsocket)
     else
         m_tcpsocket->Receive(buff,MAXSIZE); // 接收好友名称
     return buff;
+
+#endif
+
 }

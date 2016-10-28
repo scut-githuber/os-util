@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "GetInputCond.h"
 
 // Function name : GetInputCondi()
 // Input:   从键盘输入查询信息

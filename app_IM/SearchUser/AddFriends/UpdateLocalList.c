@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "UpdateLocalList.h"
 
 // Function Name : UpdateLocalList()
 // Input : 无
@@ -11,11 +11,20 @@ bool UpdateLocalList() // 假设列表中好友以 ","分隔
     memset(tmp_buff,0,MAXSIZE * sizeof(char));
     int len;
     int i = 0;
-    buff = GetFriendList(m_tcpsocket,&len); //获取最新的好友列表
 
+#if defined(NO_IMPLEMENTATION)
+
+    printf("Local friend list has been updated");
+    return true;
+
+#else
+
+    buff = GetFriendList(m_tcpsocket,&len); //获取最新的好友列表
     if(buff) return false; // 获取失败
 
+
     RemoveList(); // 清除好友列表
+
 
     ptr = buff;
 
@@ -29,4 +38,8 @@ bool UpdateLocalList() // 假设列表中好友以 ","分隔
         else
             tmp_buff[i++] = *ptr;
     }
+
+
+#endif
+
 }

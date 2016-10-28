@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "SendRequestResult.h"
 
 // Function Name : SendRequestResult()
 // Input: tcp socket指针,请求参数,参数长度
@@ -7,8 +7,18 @@
 
 void SendRequestResult(TcpSocket *m_tcpsocket,uint32_t nFlag, int len)
 {
+
+#if defined(NO_IMPLEMENTATION)
+
+    printf("Sending request result \n");
+
+#else
+
     bool ret = m_tcpsocket->Send(nFlag,len); // 向服务器发送请求结果
 
     if(!ret)                                // 发送失败
         printf("Failed in sending result to server\n");
+
+#endif
+
 }

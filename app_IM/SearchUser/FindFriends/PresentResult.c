@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "PresentResult.h"
 
 // Function Name : PresentResult()
 // Input : 查询结果
@@ -12,16 +12,24 @@ void PresentResult(char *result) // 假设不同查询结果用,分隔
     memset(buff,0,MAXSIZE * sizeof(char)); // 初始化buff为0,buff用来缓存每个查询结果
     int i = 0;
 
-    while(ptr++){
-        if(*ptr == ',')
-        {
-            buff[i] = '\0';
-            DisplayResult(buff);
-            i = 0;
-        }
-        else
-            buff[i++] = *ptr;
-    }
+#if defined(NO_IMPLEMENTATION)
+
+    printf("Presenting the result");
+
+#else
+
+  while(ptr++){
+      if(*ptr == ',')
+      {
+          buff[i] = '\0';
+          DisplayResult(buff);
+          i = 0;
+      }
+      else
+          buff[i++] = *ptr;
+  }
+
+#endif
 
 }
 

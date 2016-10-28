@@ -7,7 +7,7 @@
 #define LIST_REQUEST_AGREE 444 // 服务器同意列表请求
 #define FRIEND_REQUEST 666 // 请求添加好友
 #define FRIEND_REQUEST_AGREE 777 //服务器同意好友请求
-#define FRIEND_ALREADY_EXIST 888
+#define FRIEND_ALREADY_EXIST 888 //好友已存在
 #define MAXSIZE 255
 #define NO_IMPLEMENTATION // 暂时不实现各个函数
 

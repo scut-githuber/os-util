@@ -6,6 +6,7 @@
 char *Decode(char const *code) {
     int i,n,len;
     char prim[100];
+
     char temp_char,trans_char;
     int temp_num,trans_num;
     len = strlen(code);

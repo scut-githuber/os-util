@@ -5,7 +5,9 @@
 #define OS_UTIL_GENERIC_H
 #define LIST_REQUEST 555 //  请求好友列表
 #define LIST_REQUEST_AGREE 444 // 服务器同意列表请求
+#define PROFILE_REQUEST_AGREE 445 // 请求好友资料
 #define FRIEND_REQUEST 666 // 请求添加好友
+#define DELETE_FRIEND_REQUEST 667 // 请求添加好友
 #define FRIEND_REQUEST_AGREE 777 //服务器同意好友请求
 #define FRIEND_ALREADY_EXIST 888 //好友已存在
 #define MAXSIZE 255

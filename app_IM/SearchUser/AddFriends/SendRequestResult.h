@@ -13,7 +13,7 @@
 #ifndef OS_UTIL_SENDREQUESTRESULT_H
 #define OS_UTIL_SENDREQUESTRESULT_H
 
-extern void SendRequestResult(TcpSocket *m_tcpsocket,int len);
+extern void SendRequestResult(TcpSocket *m_tcpsocket,uint32_t nFlag, int len);
 
 #endif  //OS_UTIL_SENDREQUESTRESULT_H
 

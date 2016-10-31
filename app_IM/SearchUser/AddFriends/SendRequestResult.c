@@ -5,7 +5,7 @@
 // Output: 无
 // Descripiton : 向服务端发送请求结果
 
-void SendRequestResult(TcpSocket *m_tcpsocket, int len)
+void SendRequestResult(TcpSocket *m_tcpsocket,uint32_t nFlag, int len)
 {
 
 #if defined(NO_IMPLEMENTATION)
@@ -14,7 +14,7 @@ void SendRequestResult(TcpSocket *m_tcpsocket, int len)
 
 #else
 
-    bool ret = m_tcpsocket->Send(FRIEND_REQUEST,len); // 向服务器发送请求结果
+    bool ret = m_tcpsocket->Send(nFlag,len); // 向服务器发送请求结果
 
     if(!ret)                                // 发送失败
         printf("Failed in sending result to server\n");

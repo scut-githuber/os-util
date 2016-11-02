@@ -1,4 +1,4 @@
-#include "login.h"
+#include <string.h>
 // Function name : Encode(char prim[])
 // Input :   password decode
 // Output :  password encode
@@ -12,9 +12,9 @@ char *Encode(char const *prim) {
 
     for(i = 0;i < len;i++) {
         temp_char = prim[i]; 
-        if (temp_char <= '9' && temp_char >= '0'){
+        if (temp_char <='9' && temp_char >='0'){
             trans_char = temp_char;             
-        }
+        }        
         else {
 	       	if (temp_char <= 'z' && temp_char >= 'a')
 	            temp_num = temp_char - 'a' + 1;

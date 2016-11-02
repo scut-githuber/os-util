@@ -1,4 +1,4 @@
-#include "login.h"
+#include <string.h>
 // Function name : Decode(char code[])
 // Input :   password encode
 // Output :  password decode
@@ -13,9 +13,9 @@ char *Decode(char const *code) {
 
     for(i = 0;i < len;i++) {
         temp_char = code[i];
-        if (temp_char <= '9' && temp_char >= '0'){
+       if (temp_char <='9' && temp_char >='0'){
             trans_char = temp_char;             
-        }      
+        }       
         else {    
 	        if (temp_char <= 'z' && temp_char >= 'a')
 	            temp_num = temp_char - 'a' + 1;

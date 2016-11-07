@@ -12,19 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f39f996-d13e-4546-aeb3-f09891738a79" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/SendData.c" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.h" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/Server_Client/client.c" afterPath="$PROJECT_DIR$/app_IM/Server_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/Server_Client/server.c" afterPath="$PROJECT_DIR$/app_IM/Server_Client/server.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.h" afterPath="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.c" afterPath="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_IM/SearchUser/Generic.h" afterPath="$PROJECT_DIR$/app_IM/SearchUser/Generic.h" />
     </list>
     <ignored path="os-util.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,112 +49,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="client.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/Server_Client/client.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/Server_Client/server.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendRequest.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReceiveFriendRequest.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReceiveFriendRequest.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.h">
+      <file leaf-file-name="Generic.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/Generic.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding>
-                <element signature="e#119#142#0" expanded="true" />
+                <element signature="e#582#600#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateLocalList.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#109#132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendRequestResult.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="e#113#152#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateLocalList.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c">
+      <file leaf-file-name="GetInputCond.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#107#146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetInputCond.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendRequest.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.h">
+      <file leaf-file-name="GetResult.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="e#105#128#0" expanded="true" />
+                <element signature="e#97#136#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgreeRequest.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c">
+      <file leaf-file-name="PresentResult.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#105#144#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncData.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/EncData.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetSendRes.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/GetSendRes.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetUsrMsg.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/GetUsrMsg.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PresentResult.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetResult.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,7 +177,6 @@
       <list>
         <option value="$PROJECT_DIR$/app_IM/Server_Client/client.h.h" />
         <option value="$PROJECT_DIR$/app_IM/Server_Client/server.h" />
-        <option value="$PROJECT_DIR$/app_IM/SearchUser/Generic.h" />
         <option value="$PROJECT_DIR$/app_IM/Server_Client/client.h" />
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h" />
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.c" />
@@ -184,8 +188,23 @@
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c" />
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.h" />
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.c" />
-        <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c" />
         <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/Generic.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.c" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/SendData.h" />
+        <option value="$PROJECT_DIR$/app_IM/SearchUser/FindFriends/SendData.c" />
       </list>
     </option>
   </component>
@@ -291,6 +310,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SearchUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os-util" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os-util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_IM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SearchUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FindFriends" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os-util" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os-util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_IM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SearchUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BrowseFriendList" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,7 +581,7 @@
       <workItem from="1478139669999" duration="46000" />
       <workItem from="1478139732070" duration="792000" />
       <workItem from="1478495062684" duration="743000" />
-      <workItem from="1478504685586" duration="9269000" />
+      <workItem from="1478504685586" duration="11577000" />
     </task>
     <task id="LOCAL-00001" summary="delete header file">
       <created>1478140208423</created>
@@ -534,15 +597,22 @@
       <option name="project" value="LOCAL" />
       <updated>1478140503332</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1478515666815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1478515666815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10850000" />
+    <option name="totallyTimeSpent" value="13158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2522911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -603,48 +673,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/Generic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/ViewProfile/GetReturnProfile.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/DeleteFriend/SendDeleteRequest.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#245#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/ReceiveFriendRequest.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -802,32 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/Generic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#533#551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_IM/Server_Client/client.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -844,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/FriendRequest.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -867,16 +859,8 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
           <folding>
-            <element signature="e#105#128#0" expanded="true" />
+            <element signature="e#105#128#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/Server_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,18 +877,16 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="39" />
           <folding>
-            <element signature="e#119#142#0" expanded="true" />
+            <element signature="e#119#142#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h">
+    <entry file="file://$PROJECT_DIR$/app_IM/Server_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#113#152#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -913,16 +895,214 @@
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#109#132#0" expanded="true" />
+            <element signature="e#109#132#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#113#152#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/AgreeRequest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/SendRequestResult.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/AddFriends/UpdateLocalList.c">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#113#152#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/PresentFriendList.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/GetFriendList.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/BrowseFriendList/SendListRequest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#109#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#97#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetResult.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/SendData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/GetInputCond.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/Generic.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="e#582#600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/SendData.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/EncData.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/GetSendRes.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/sendMessage/GetUsrMsg.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#105#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_IM/SearchUser/FindFriends/PresentResult.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

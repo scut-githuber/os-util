@@ -7,7 +7,7 @@
 
 char *GetInputCondi()
 {
-    char buffer[MAXSIZE];
+    char *buffer = (char*)malloc(sizeof(char) * MAXSIZE);
     memset(buffer,0,MAXSIZE * sizeof(char));
     printf("Please Input Search conditions \n");
     scanf("%s",buffer);

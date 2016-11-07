@@ -8,13 +8,8 @@
 void PresentFriendList()
 {
     char buff[MAXSIZE];
+    printf("输出好友列表: \n");
     memset(buff,0,sizeof(char) * MAXSIZE);
-
-#if defined(NO_IMPLEMENTATION)
-
-    printf("Presenting the friend list");
-
-#else
 
     for(int i=0;i<GetFriendNum();i++) //输出好友名称
     {
@@ -22,5 +17,4 @@ void PresentFriendList()
         printf("%s\n",buff);
     }
 
-#endif
 }

@@ -2,35 +2,28 @@
 #include "SendListRequest.h"
 
 // Function Name : GetFriendList()
-// Input : tcp socket 指针,数据长度的引用
-// Output: 好友列表
+// Input : socket文件描述符
+// Output: 若成功返回好友列表字符串指针,若失败返回NULL指针
 // Description : 从服务端获取最新的好友列表
 
-char *GetFriendList(TcpSoket *m_tcpsocket,int *len)
+char *GetFriendList(int fd)
 {
-    char buff[MAXSIZE];
-    memset(buff,0,MAXSIZE * sizeof(char));
+    char *buff = (char*)malloc(MAXSIZE * sizeof(char));
+    memset(buff,0,sizeof(char) * MAXSIZE);
 
-#if defined(NO_IMPLEMENTATION)
+    SendListRequest(fd);
 
-    printf("Getting friend List");
-    return NULL;
+    Receive_Client(buff,fd);
 
-#else
-
-    if(!SendListRequest(m_tcpsocket)) return NULL; // 获取列表请求失败
-
-
-    bool ret = m_tcpsocket->Receive(buff,MAXSIZE); // 从服务端获取好友列表
-    if(!ret)                                        // 获取失败
+    if(strcmp(buff,LIST_REQUEST_AGREE) != 0)
     {
-        printf("Failed in getting friend list");
+        printf("获取好友列表失败\n");
         return NULL;
     }
-    printf("Get friend list Successfully");
-    *len = MAXSIZE;
+
+    memset(buff,0,sizeof(char) * MAXSIZE);
+
+    Receive_Client(buff,fd);
+
     return buff;
-
-#endif
-
 }

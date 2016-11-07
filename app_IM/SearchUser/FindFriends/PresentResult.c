@@ -1,51 +1,23 @@
 #include "PresentResult.h"
+#include "GetResult.h"
 
 // Function Name : PresentResult()
-// Input : 查询结果
+// Input : socket文件描述符
 // Output : 无
 // Description : 将查询结果在客户端显示
 
-void PresentResult(char *result) // 假设不同查询结果用,分隔
+void PresentResult(int fd)
 {
-    char *ptr = result;
-    char buff[MAXSIZE];
-    memset(buff,0,MAXSIZE * sizeof(char)); // 初始化buff为0,buff用来缓存每个查询结果
-    int i = 0;
+    int ret;
 
-#if defined(NO_IMPLEMENTATION)
+    ret = GetResult(fd);
 
-    printf("Presenting the result");
-
-#else
-
-  while(ptr++){
-      if(*ptr == ',')
-      {
-          buff[i] = '\0';
-          DisplayResult(buff);
-          i = 0;
-      }
-      else
-          buff[i++] = *ptr;
-  }
-
-#endif
-
-}
-
-
-// Function Name : DisplayReulst()
-// Input : 将要在客户端上显示的字符串
-// Output :无
-// Description: 将数据在客户端上显示
-
-void DisplayResult(char *buff)
-{
-    char *ptr = buff;
-
-    while(ptr++){
-       printf("%c",*ptr);
+    if(ret == 1)
+    {
+        printf("该好友已经存在\n");
     }
-
-    printf("\n");
+    else
+    {
+        printf("该好友不存在\n");
+    }
 }

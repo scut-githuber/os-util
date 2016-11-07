@@ -8,6 +8,6 @@
 #include "../Generic.h"
 #include "../../Server_Client/client.h"
 
-extern int UpdateLocalList();
+extern int UpdateLocalList(int fd);
 
 #endif //OS_UTIL_UPDATELOCALLIST_H

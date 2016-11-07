@@ -1,24 +1,15 @@
 #include "SendRequestResult.h"
 
 // Function Name : SendRequestResult()
-// Input: tcp socket指针,请求参数,参数长度
+// Input: 文件描述符fd,该文件描述符为客户端socket文件的描述符
 // Output: 无
 // Descripiton : 向服务端发送请求结果
 
-void SendRequestResult(TcpSocket *m_tcpsocket, int len)
+void SendRequestResult(int fd)
 {
-
-#if defined(NO_IMPLEMENTATION)
-
-    printf("Sending request result \n");
-
-#else
-
-    bool ret = m_tcpsocket->Send(FRIEND_REQUEST,len); // 向服务器发送请求结果
+    char *flag = (char*);
+    int ret = Send_Client(); // 向服务器发送请求结果
 
     if(!ret)                                // 发送失败
         printf("Failed in sending result to server\n");
-
-#endif
-
 }

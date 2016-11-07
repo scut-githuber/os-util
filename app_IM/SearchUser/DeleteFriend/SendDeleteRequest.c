@@ -1,25 +1,17 @@
-#include "Generic.h"
+#include "sendDeleteRequest.h"
 
 // Function Name : SendDeleteRequest()
-// Input : tcp socket指针,名字以及长度
-// Output : 无
-// Description : 客户端向服务器发送删除好友请求
+// Input: 文件描述符fd,该文件描述符为客户端socket文件的描述符
+// Output: 成功返回1 否则返回-1
+// Descripiton : 向服务端发送删除好友请求
 
-void SendDeleteRequest(TcpSocket *m_tcpsocket,char *name,int len)
+int SendDeleteRequest(int fd)
 {
+    char *flag = (char*)DELETE_FRIEND_REQUEST;
+    int ret = Send_Client(flag,fd); // 向服务器发送请求结果
 
-#if defined(NO_IMPLEMENTATION)
-
-    printf("Sending delete request to the server\n");
-
-#else
-
-    ret = m_tcpsocket->Send(DELETE_FRIEND_REQUEST,sizeof(uint32_t)); // 先发送删除好友参数,告诉服务器准备接受好友名称.
-    if(ret)
-        m_tcpsocket->Send(name,len); // 发送好友名称
+    if(!ret)                                // 发送失败
+        return -1;
     else
-        printf("Failed in sending the request");
-
-#endif
-
+        return 1;
 }

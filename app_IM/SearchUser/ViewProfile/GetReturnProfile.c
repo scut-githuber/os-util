@@ -1,33 +1,22 @@
-#include "Generic.h"
+#include "GetReturnProfile.h"
 
 // Function Name : GetReturnProfile()
-// Input : tcp socket 指针,数据长度的引用
-// Output : 好友资料
-// Description : 客户端获取服务器返回的结果
+// Input : 文件描述符fd
+// Output: 好友资料字符串指针,若接受失败则返回NULL指针
+// Description : 客户端获取服务器返回的好友资料
 
-
-char *GetReturnProfile(TcpSoket *m_tcpsocket,int *len)
+char *GetReturnProfile(int fd)
 {
-    char buff[MAXSIZE];
+    char *buff = (char*)malloc(MAXSIZE * sizeof(char)); // 分配缓冲区
+
     memset(buff,0,MAXSIZE * sizeof(char));
 
-#if defined(NO_IMPLEMENTATION)
-
-    printf("Getting friend profile");
-    return NULL;
-
-#else
-
-    bool ret = m_tcpsocket->Receive(buff,MAXSIZE); // 从服务端获取好友资料
-    if(!ret)                                        // 获取失败
+    if(Receive_Client(buff,fd))
     {
-        printf("Failed in getting friend profile");
-        return NULL;
+        printf("Get Friend Profile Successfully");
+        return buff;
     }
-    printf("Get friend profile Successfully");
-    *len = MAXSIZE;
-    return buff;
 
-#endif
-
+    else
+        return buff;
 }

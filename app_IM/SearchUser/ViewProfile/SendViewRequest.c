@@ -1,29 +1,17 @@
-#include "Generic.h"
+#include "SendViewRequest.h"
 
 // Function Name : SendViewRequest()
-// Input : tcp socket指针
-// Output : 发送成功返回true,否则返回false
-// Description : 客户端向服务器发送查看好友资料请求
+// Input: 文件描述符fd
+// Output: 成功返回1 否则返回-1
+// Descripiton : 向服务端发送删除好友请求
 
-bool SendViewRequest(TcpSocket *m_tcpsocket)
+int SendViewRequest(int fd)
 {
+    char *flag = (char*)PROFILE_REQUEST_AGREE;
+    int ret = Send_Client(flag,fd); // 向服务器发送查看好友资料请求
 
-#if defined(NO_IMPLEMENTATION)
-
-    printf("Profile request has been sent");
-    return true;
-
-#else
-
-    bool ret = m_tcpsocket->Send(PROFILE_REQUEST_AGREE,sizeof(uint32_t)); // 发送查看好友资料请求
-    if(ret)
-    {
-        printf("Failed in sending request to server\n");
-        return false;
-    }
+    if(!ret)                                // 发送失败
+        return -1;
     else
-        printf("Successfully sent the request to server\n");
-
-#endif
-
+        return 1;
 }

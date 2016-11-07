@@ -1,4 +1,4 @@
-#include "Generic.h"
+#include "ViewProfile.h"
 
 // Function Name : ViewProfile()
 // Input : 好友资料

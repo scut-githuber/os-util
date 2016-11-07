@@ -9,8 +9,10 @@
   
 ## 一、即时通讯组          app_IM/
 ### 模块
-  - 登录模块           app_IM/login
-  - 好友模块
+| 模块 | 文件夹 |
+| --- | --- |
+| 登录模块 | app_IM/login |
+| 好友模块 | app_IM/SearchUser |
 
 ## 二、音乐播放器组        app_MusicPlayer/
 ### 模块

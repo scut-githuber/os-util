@@ -50,7 +50,6 @@ int main(void) {
 
 int Send_Client(const char *buff,int fd)
 {
-
     for(;;){
         if(strcmp("exit",buff) == 0)
             return 1;

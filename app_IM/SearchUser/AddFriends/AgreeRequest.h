@@ -7,6 +7,6 @@
 
 #include "../../Server_Client/client.h"
 
-extern void AgreeRequest(const char *name);
+extern void AgreeRequest(const char *name,int fd);
 
 #endif //OS_UTIL_AGREEREQUEST_H

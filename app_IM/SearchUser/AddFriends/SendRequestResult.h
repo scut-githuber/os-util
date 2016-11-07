@@ -6,6 +6,8 @@
 #define OS_UTIL_SENDREQUESTRESULT_H
 
 #include "../../Server_Client/client.h"
-extern void SendRequestResult(TcpSocket *m_tcpsocket, int len);
+#include "../Generic.h"
+
+extern int SendRequestResult(int fd);
 
 #endif //OS_UTIL_SENDREQUESTRESULT_H

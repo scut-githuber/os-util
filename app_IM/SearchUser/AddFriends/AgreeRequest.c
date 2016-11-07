@@ -6,7 +6,7 @@
 // Output :无
 // Descripiton : 同意好友请求
 
-void AgreeRequest(const char *name)
+void AgreeRequest(const char *name,int fd)
 {
     int ret;
     //将好友添加到本地
@@ -19,5 +19,7 @@ void AgreeRequest(const char *name)
         printf("添加好友成功\n");
 
     // 向服务端发送请求结果
-    SendRequestResult(m_tcpsocket,AGREE_REQUEST,sizeof(uint32_t));
+    ret = SendRequestResult(fd);
+    if(ret == -1)
+        printf("向服务器发送同意请求失败\n");
 }

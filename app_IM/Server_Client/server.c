@@ -102,6 +102,7 @@ int Receive_Server(char *buff,int fd)
 }
 
 int Send_Server(const char *buff,int fd) {
+
     for(;;) {
         send(fd,buff,strlen(buff),0);
         if(strcmp("exit",buff) == 0) {

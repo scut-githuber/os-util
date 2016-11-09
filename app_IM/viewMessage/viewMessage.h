@@ -15,7 +15,5 @@
  */
 
 
-extern int PostUsrMsg(Data const *data_enc);
-extern int GetSendRes(int post_res);
-extern int ProcessMsgRes(int send_res);
-#endif // SENDMESSAGE_H_INCLUDED
+extern int view(char username[MAX_NAME]);
+#endif // VIEWMESSAGE_H_INCLUDED

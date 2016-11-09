@@ -4,6 +4,7 @@ Input:用户名
 Output:聊天信息
 Description:用于查看用户的聊天记录
 */
+#include"viewmessge.h"
 int view(char username[MAX_NAME]) {
 	char mess[MAX_BUF];
 	FILE *cfptr;//文件指针

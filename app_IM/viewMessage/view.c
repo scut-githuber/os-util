@@ -2,7 +2,7 @@
 Functionname:view
 Input:用户名
 Output:聊天信息
-Description:用于拆看用户的聊天记录
+Description:用于查看用户的聊天记录
 */
 int view(char username[MAX_NAME]) {
 	char mess[MAX_BUF];

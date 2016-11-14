@@ -1,0 +1,137 @@
+<player>
+    <user>
+        <!-- 用户注册 -->
+        <scene>
+            <name>用户注册</name>
+            <descriptioin>新用户注册，包括对新用户信息校验，新用户信息录入</descriptioin>
+            <register>
+                <name>信息校验</name>
+                <description>校验注册信息会否合法，密码昵称等是否符合要求</description>
+                <service>前台信息验证，如长度等规则</service>
+                <service>将信息传入服务器看是否有重复信息</service>
+                <service>若无重复则信息录入服务器</service>
+                <service>传回成功或失败的讯号</service>
+                <service>前台给出相关成功或错误提示</service>
+                <service>成功后进入相应界面</service>
+            </register>
+        </scene>
+        <scene>
+            <name>用户登录</name>
+            <descriptioin>用户登录，包括对用户信息校验以及页面跳转</descriptioin>
+            <login>
+                <name>登录</name>
+                <description>实现用户登录功能</description>
+                <service>获取输入的用户名和密码，在通过前台验证后再传入后台进行验证</service>
+                <service>服务器判断是否存在该用户，并判断密码是否正确</service>
+                <service>若返回成功则给出成功提示</service>
+                <service>页面跳转至登录成功之后的用户界面</service>
+            </login>
+        </scene>
+        <!-- 用户信息管理 -->
+        <scene>
+            <name>用户信息管理</name>
+            <descriptioin>用户管理，包括对用户信息的修改</descriptioin>
+            <modify>
+                <name>信息修改</name>
+                <description>从服务器获取当前用户的信息并在修改后保存</description>
+                <service>获取当前用户的ID并传至服务器，获取当前用户的基本信息</service>
+                <service>服务器判断是否存在该用户，存在则返回相应数据，否则传回失败信息</service>
+                <service>若返回成功则显示相应数据，否则给出错误提示</service>
+                <service>将用户信息修改完成后，前台对用户的信息系进行校验</service>
+                <service>通过校验后用户信息将传入服务器进行保存。此时成功后返回成功提示并跳转至用户界面</service>
+            </modify>
+        </scene>
+    </user>
+    <search name="歌曲搜索">
+        <module button="根据歌名搜索">
+            <text>输入歌曲名称</text>
+            <text>传送至服务器</text>
+            <text>服务器搜索到相关歌曲并返回信息</text>
+            <text>显示相同歌曲名称列表</text>
+        </module>
+        <module button="根据歌手搜索">
+            <text>输入歌手名称</text>
+            <text>传送至服务器</text>
+            <text>服务器搜索到相关歌手的歌曲并返回信息</text>
+            <text>显示相同歌手的歌曲名称列表</text>
+        </module>
+        <module button="根据歌词搜索">
+            <text>输入歌词</text>
+            <text>传送至服务器</text>
+            <text>服务器搜索到相关歌词的歌曲并返回信息</text>
+            <text>显示相同歌词的歌曲名称列表</text>
+        </module>
+
+    </search>
+    <classify>
+        <name>音乐分类</name>
+        <description>添加音乐分类</description>
+        <module>用户创建音乐分类列表</module>
+        <service>用户点击按钮发起创建音乐分类列表请求</service>
+        <service>弹窗供用户输入列表名</service>
+        <service>将用户新建列表信息添加到软件中</service>
+        <service>更新用户界面信息</service>
+    </classify>
+    <history>
+        <description>音乐播放记录</description>
+        <add_history>
+            <description>添加用户音乐播放记录</description>
+            <service>用户点击音乐列表文件进行播放</service>
+            <service>将用户正在播放的音乐信息添加到音乐播放记录列表中</service>
+            <service>更新用户音乐播放记录列表信息</service>
+        </add_history>
+        <delete_history>
+            <description>删除用户音乐播放记录</description>
+            <service>用户选中音乐播放记录中某条记录信息</service>
+            <service>右击点击删除播放记录</service>
+            <service>将用户选中的音乐播放记录信息从音乐播放记录列表中删除</service>
+            <service>更新用户音乐播放记录列表信息</service>
+        </delete_history>
+        <delete_all_history>
+            <description>清空用户音乐播放记录</description>
+            <service>用户点击清空音乐播放记录列表</service>
+            <service>将用户播放记录列表中的所有播放记录删除</service>
+            <service>更新用户音乐播放记录列表信息</service>
+        </delete_all_history>
+        <display>显示用户音乐播放器界面</display>
+    </history>
+
+    <playlist>
+
+        <description>音乐列表</description>
+        <add_music_file>
+            <description>点击添加本地音乐文件</description>
+            <service>发起添加请求</service>
+            <service>弹出本地文件夹窗口</service>
+            <service>用户点选音乐文件</service>
+            <service>将用户选中的音乐文件信息添加到软件音乐列表</service>
+            <service>更新用户音乐列表</service>
+        </add_music_file>
+
+        <add_folder>
+            <description>添加本地音乐文件夹</description>
+            <service>发起添加请求</service>
+            <service>弹出本地文件窗口</service>
+            <service>用户点选文件夹</service>
+            <service>扫描用户选中的文件夹中的所有音乐文件信息并将路径信息添加到软件音乐列表</service>
+            <service>更新用户音乐列表</service>
+        </add_folder>
+
+        <delete_music_file>
+            <description>删除列表文件</description>
+            <service>用户选中列表中音乐文件</service>
+            <service>右击选中移除文件</service>
+            <service>将用户选中的音乐文件信息从音乐列表中删除</service>
+            <service>更新用户音乐列表</service>
+        </delete_music_file>
+
+
+        <show_music_info>
+            <description>显示音乐文件信息</description>
+            <service>用户选中列表中音乐文件</service>
+            <service>右击选中显示音乐信息</service>
+            <service>将用户选中的音乐文件信息弹窗显示</service>
+        </show_music_info>
+    </playlist>
+
+</player>

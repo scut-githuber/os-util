@@ -67,10 +67,10 @@
         <name>音乐分类</name>
         <description>添加音乐分类</description>
         <module>用户创建音乐分类列表</module>
-        <service>用户点击按钮发起创建音乐分类列表请求</service>
-        <service>弹窗供用户输入列表名</service>
-        <service>将用户新建列表信息添加到软件中</service>
-        <service>更新用户界面信息</service>
+        <service path="app_MusicPlayer/classify/classify.h/addRequest">用户点击按钮发起创建音乐分类列表请求</service>
+        <service path="app_MusicPlayer/classify/classify.h/pop">弹窗供用户输入列表名</service>
+        <service path="app_MusicPlayer/classify/classify.h/addClass">将用户新建列表信息添加到软件中</service>
+        <service path="app_MusicPlayer/classify/classify.h/updateList">更新用户界面信息</service>
     </classify>
     <history>
         <description>音乐播放记录</description>

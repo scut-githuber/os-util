@@ -1,0 +1,19 @@
+<player>
+    <user>
+        <!-- 用户注册 -->
+        <scene>
+            <name>用户注册</name>
+            <descriptioin>新用户注册，包括对新用户信息校验，新用户信息录入</descriptioin>
+            <register path="app_MusicPlayer/user/register/register.h">
+                <name>信息校验</name>
+                <description>校验注册信息会否合法，密码昵称等是否符合要求</description>
+                <service path="app_MusicPlayer/user/register/GetRegisterInfo.c">前台信息验证，如长度等规则，前台给出相关成功或错误提示</service>
+                <service path="app_MusicPlayer/user/register/PostRegisterMsg.c">将信息传入服务器看是否有重复信息</service>
+                <service path="app_MusicPlayer/user/register/CheckRegister.c">若无重复则信息录入服务器</service>
+                <service path="app_MusicPlayer/user/register/ProcessRegisterRes.c">传回成功或失败的讯号</service>
+                <service path="app_MusicPlayer/user/register/ShowLoginPage.c">成功后进入相应界面</service>
+            </register>
+        </scene>
+    </user>
+
+</player>

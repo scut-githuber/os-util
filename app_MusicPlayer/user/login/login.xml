@@ -1,0 +1,18 @@
+<player>
+    <user>
+        <!-- 用户登录 -->
+        <scene>
+            <name>用户登录</name>
+            <descriptioin>用户登录，包括对用户信息校验以及页面跳转</descriptioin>
+            <login path="app_MusicPlayer/user/login/login.h">
+                <name>登录</name>
+                <description>实现用户登录功能</description>
+                <service path="app_MusicPlayer/user/login/GetUsrAndPwd.c">获取输入的用户名和密码，在通过前台验证后再传入后台进行验证</service>
+                <service path="app_MusicPlayer/user/login/CheckLoginInfo.c">服务器判断是否存在该用户，并判断密码是否正确</service>
+                <service path="app_MusicPlayer/user/login/PostAuthMsg.c">若返回成功则给出成功提示</service>
+                <service path="app_MusicPlayer/user/login/ShowUserPage.c">页面跳转至登录成功之后的用户界面</service>
+            </login>
+        </scene>
+    </user>
+
+</player>

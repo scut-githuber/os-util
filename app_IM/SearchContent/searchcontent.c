@@ -10,8 +10,8 @@
  *  @param theShowCharaterNumbers 一行要多少个可以看到的文字其它的省略号
  *  @return 渲染的结果
  */
-
-+ (NSMutableAttributedString *)theContent:(NSString *)content drawStr:(NSString *)drawText theShowCharaterNumbers:(NSInteger)charaterNumbers{
+ string *searchcontent(int fd){
++ (NSMutableAttributedString *)theContent:(NSString *)content drawStr:(NSString *)drawText theShowCharaterNumbers:(NSInteger)charaterNumbers
     //查找子字符串的位置
     NSRange range = [content rangeOfString:drawText];
     NSMutableAttributedString *attributeStr = nil;

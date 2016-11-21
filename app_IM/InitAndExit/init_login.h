@@ -1,1 +1,2 @@
-
+int ReadStorage();
+void login();

@@ -5,7 +5,7 @@
 // Output : 返回歌曲列表
 // Description : 根据歌曲名称搜索歌曲
 
-Search_res searchMusicByName(Info const *searchInfo){
+Search_Res searchMusicByName(Info const *searchInfo){
 	if(searchInfo != null){		
 		SearchService searchService = SearchService::getSearchService(); 
 		Music resList[MUSIC_LIST_MAX_SIZE] = searchService.searchByName(info);
@@ -28,7 +28,7 @@ Search_res searchMusicByName(Info const *searchInfo){
 // Output : 返回歌曲列表
 // Description : 根据歌手搜索歌曲
 
-Search_res searchMusicBySinger(Info const *searchInfo){
+Search_Res searchMusicBySinger(Info const *searchInfo){
 	if(searchInfo != null){		
 		SearchService searchService = SearchService::getSearchService(); 
 		Music resList[MUSIC_LIST_MAX_SIZE] = searchService.searchBySinger(info);
@@ -50,7 +50,7 @@ Search_res searchMusicBySinger(Info const *searchInfo){
 // Output : 返回歌曲列表
 // Description : 根据歌词搜索歌曲
 
-Search_res searchMusicByName(Info const *searchInfo){
+Search_Res searchMusicByName(Info const *searchInfo){
 	if(searchInfo != null){
 		SearchService searchService = SearchService::getSearchService(); 
 		Music resList[MUSIC_LIST_MAX_SIZE] = searchService.searchByLyric(info);

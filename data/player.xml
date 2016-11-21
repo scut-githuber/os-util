@@ -43,19 +43,19 @@
         </scene>
     </user>
     <search name="歌曲搜索">
-        <module button="根据歌名搜索">
+        <module button="根据歌名搜索" path="app_MusicPlayer/search/search.h/searchMusicByName">
             <text>输入歌曲名称</text>
             <text>传送至服务器</text>
             <text>服务器搜索到相关歌曲并返回信息</text>
             <text>显示相同歌曲名称列表</text>
         </module>
-        <module button="根据歌手搜索">
+        <module button="根据歌手搜索" path="app_MusicPlayer/search/search.h/searchMusicBySinger">
             <text>输入歌手名称</text>
             <text>传送至服务器</text>
             <text>服务器搜索到相关歌手的歌曲并返回信息</text>
             <text>显示相同歌手的歌曲名称列表</text>
         </module>
-        <module button="根据歌词搜索">
+        <module button="根据歌词搜索" path="app_MusicPlayer/search/search.h/searchMusicByLyric">
             <text>输入歌词</text>
             <text>传送至服务器</text>
             <text>服务器搜索到相关歌词的歌曲并返回信息</text>

@@ -1,0 +1,44 @@
+<scene>
+	<name>会员管理</name>
+	<description>会员管理能够添加和删除会员，进行会员搜索，修改会员积分</description>
+	<view>添加会员</view>
+	<module path="app_Website/member_management/membermanagement.h/member_add()">member_add</module>
+	<view>删除会员</view>
+	<module path="app_Website/member_management/membermanagement.h/member_delete()">member_delete</module>
+	<view>会员搜索</view>
+	<module path="app_Website/member_management/membermanagement.h/member_search()">member_search</module>
+	<view>会员积分</view>
+	<module path="app_Website/member_management/membermanagement.h/member_point()">member_point</module>
+</scene>
+<member_add>
+	<description>增加注册用户为会员</description>
+	<account path="app_Website/member_management/membermanagement.h/GetAccount()">输入用户账号</account>
+	<check path="app_Website/member_management/membermanagement.h/CheckAccountExist()">查询数据库账号是否存在</check>
+	<submit path="app_Website/member_management/membermanagement.h/SendAccountMsg()">向服务器提交信息</submit>
+	<service path="app_Website/member_management/membermanagement.h/GetResult()">获取服务器返回结果</service>
+	<service path="app_Website/member_management/membermanagement.h/ExeSql())">访问数据库数据修改该用户类型为会员</service>
+</member_add>
+<member_delete>
+	<description>修改会员为普通用户</description>
+	<account path="app_Website/member_management/membermanagement.h/GetAccount()">输入用户账号</account>
+	<check path="app_Website/member_management/membermanagement.h/CheckAccountExist()">查询数据库账号是否存在</check>
+	<submit path="app_Website/member_management/membermanagement.h/SendAccountMsg()">向服务器提交信息</submit>
+	<service path="app_Website/member_management/membermanagement.h/GetResult()">获取服务器返回结果</service>
+	<service path="app_Website/member_management/membermanagement.h/ExeSql())">访问数据库数据修改该用户类型为注册用户</service>
+</member_delete>
+<member_search>
+	<description>根据账号查询会员</description>
+	<account path="app_Website/member_management/membermanagement.h/GetAccount()">输入用户账号</account>
+	<check path="app_Website/member_management/membermanagement.h/CheckAccountExist()">查询数据库账号是否存在</check>
+	<submit path="app_Website/member_management/membermanagement.h/SendAccountMsg()">向服务器提交信息</submit>
+	<service path="app_Website/member_management/membermanagement.h/GetResult()">获取服务器返回结果</service>
+	<view path="app_Website/member_management/membermanagement.h/ExeSql())">显示查询结果，如果查询成功显示会员基本信息积分等</view>
+</member_search>
+<member_point>
+	<description>修改具体会员积分</description>
+	<account path="app_Website/member_management/membermanagement.h/GetAccount()">输入用户账号</account>
+	<check path="app_Website/member_management/membermanagement.h/CheckAccountExist()">查询数据库账号是否存在</check>
+	<submit path="app_Website/member_management/membermanagement.h/SendAccountMsg()">向服务器提交积分信息</submit>
+	<service path="app_Website/member_management/membermanagement.h/GetResult()">获取服务器返回结果</service>
+	<view path="app_Website/member_management/membermanagement.h/ExeSql())">显示积分更新的结果</view>
+</member_point>

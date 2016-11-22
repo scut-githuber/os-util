@@ -30,7 +30,7 @@
             <name>登陆</name>
             <description>用于用户登陆</description>
             <view>显示登录界面</view>
-            <modules>login</modules>
+            <modules path="app_IM/login/login.h">login</modules>
         </scene>
         <scene>
             <name>注册</name>
@@ -42,19 +42,19 @@
             <name>查看个人资料</name>
             <description>用于用户查看个人资料</description>
             <view>显示个人资料修改界面</view>
-            <modules>viewprofile</modules>
+            <modules path="app_IM/viewprofile/viewprofile.h">viewprofile</modules>
         </scene>
         <scene>
             <name>编辑个人资料</name>
             <description>用于用户编辑个人资料</description>
             <view>显示个人资料编辑界面</view>
-            <modules>editprofile</modules>
+            <modules path="app_IM/editprofile/modifyProfile.h">editprofile</modules>
         </scene>
         <scene>
             <name>修改密码</name>
             <description>用于用户修该个人密码</description>
             <view>显示用户密码修改界面</view>
-            <modules>changepasswd</modules>
+            <modules path="app_IM/changepwd/changepwd.h">changepasswd</modules>
         </scene>
 
     </account>
@@ -72,7 +72,7 @@
             <name>发送聊天信息</name>
             <description>用户发送聊天信息</description>
             <view>显示发送按钮，信息输入框</view>
-            <modules>sendMessage</modules>
+            <modules path="app_IM/sendMessage/sendMessage.h">sendMessage</modules>
         </scene>
 
         <!-- 接受聊天信息 -->
@@ -138,22 +138,22 @@
         <deletefriend>
             <name>删除好友</name>
             <description>删除好友</description>
-            <module>客户端向服务器发送删除好友请求</module>
+            <module path="app_IM/SearchUser/DeleteFriend/SendDeleteRequest.h">客户端向服务器发送删除好友请求</module>
             <module>服务器在数据库中查询是否存在好友关系</module>
             <module>服务器删除数据库中好友关系</module>
             <module>服务器向双方客户端返回最新的好友列表</module>
-            <module>双方客户端获取服务器返回的好友列表</module>
-            <module>双方客户端更新各自好友列表</module>
+            <module path="app_IM/SearchUser/BrowseFriendList/GetFriendList.h">双方客户端获取服务器返回的好友列表</module>
+            <module path="app_IM/SearchUser/AddFriends/UpdateLocalList.h">双方客户端更新各自好友列表</module>
         </deletefriend>
 
         <viewprofile>
             <name>查看好友资料</name>
             <description>查看好友资料</description>
-            <module>客户端向服务器发送查看好友资料请求</module>
+            <module path="app_IM/SearchUser/ViewProfile/SendViewRequest.h">客户端向服务器发送查看好友资料请求</module>
             <module>服务器在数据库中查询是否具有好友关系</module>
             <module>服务器查询数据库并返回结果</module>
-            <module>客户端获取服务器返回的结果</module>
-            <module>客户端显示好友资料</module>
+            <module path="app_IM/SearchUser/ViewProfile/GetReturnProfile.h">客户端获取服务器返回的结果</module>
+            <module path="app_IM/SearchUser/ViewProfile/ViewProfile.h">客户端显示好友资料</module>
         </viewprofile>
     </friends>
     <scene>

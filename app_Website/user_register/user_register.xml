@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osecommerce>
+  <body name="用户注册">
+    <module name="注册">
+      <ships name="注册流程">
+        <content path="app_Website/user_register/user_register.h/ShowLoginPage()">前端页面输入相关数据</content>
+        <content path="app_Website/user_register/user_register.h/GetRegisterInfo()">获取注册信息</content>
+        <content path="app_Website/user_register/user_register.h/SendRegisterMsg()">注册信息发送服务器</content> 
+        <content path="app_Website/user_register/user_register.h/CheckRegisterRepeat()">服务器验证数据的合法性</content>
+	    <content path="app_Website/user_register/user_register.h/GetRegisterResult()">返回结果到前端</content>
+	    <content path="app_Website/user_register/user_register.h/ShowLoginPage()">处理返回结果，注册成功跳转到登陆页面</content>
+      </ships>
+    </module>
+  </body>
+</osecommerce>

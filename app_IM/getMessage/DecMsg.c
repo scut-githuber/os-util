@@ -5,7 +5,7 @@
 // Output:  解密的消息
 // Description: 解析消息
 
-Rec_Data *ResMsg(Rec_Data const *data_src){
+Rec_Data *DecMsg(Rec_Data const *data_src){
     char *receivedata;
     Rec_Data *decdata = (Rec_Data *)malloc(sizeof(Rec_Data));
     receivedata = Decode(data_src->receivemsg);
